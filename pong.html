@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+            }
+        </style>
+        <script src="svgelement.js"></script>
+        <script src="observable.js"></script>
+        <script src="pong.js"></script>
+    </head>
+    <body>
+        <h1>Pong</h1>
+        <p>Name: Chong Chiu Gin</p> 
+        <p>Student ID: 28842022</p>
+        <p><font face="verdana" color="red">Click on the gamespace to start game!</font></p>
+        <svg id="scoreboard" width="600" height="100"> <!--new svg to display scoreboard-->
+            <text x="210" y="30" font-family="sans-serif" font-size="25px" fill="white">SCOREBOARD</text>
+            <text id="leftscore" x="140" y="80" font-family="sans-serif" font-size="30px" fill="white">0</text> <!--leftscore displays computer score-->
+            <text id="rightscore" x="445" y="80" font-family="sans-serif" font-size="30px" fill="white">0</text> <!--rightscore displays player score-->
+            <text id="gameover" x="238" y="80" font-family="sans-serif" font-size="20px" fill="yellow">GOOD LUCK!</text> <!--this text changes when game ends!-->
+        </svg>
+        <br>
+        <svg id="canvas" width="600" height="600"/>
+    </body>
+</html>
